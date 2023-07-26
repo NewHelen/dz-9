@@ -16,47 +16,22 @@ abstract public class Person {
         this.previousLastName = null;
     }
 
-    public boolean isRetired(int age) {
-        return false;
-    }
+    abstract public boolean isRetired(int age);
 
-    public void registerPartnership(Person partner) {
-    }
+    abstract public void registerPartnership(Person partner);
 
-    public void deregisterPartnership(boolean returnToPreviousLastName) {
-    }
+    abstract public void deregisterPartnership(boolean returnToPreviousLastName);
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getLastName() {return lastName;}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public void setLastName(String lastName) {this.lastName = lastName;}
 
-    public String getLastName() {
-        return lastName;
-    }
+    public int getAge() {return age;}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public Person getPartner() {return partner;}
 
-    public int getAge() {
-        return age;
-    }
+    public void setPartner(Person partner) {this.partner = partner;}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public Person getPartner() {
-        return partner;
-    }
-
-    public void setPartner(Person partner) {
-        this.partner = partner;
-    }
     public String getPreviousLastName() {
         return previousLastName;
     }

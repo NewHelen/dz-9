@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Woman woman1 = new Woman("Ella","Evans",45);
-        Woman woman2 = new Woman("Olivia","Bailey",61);
-        Man man1 = new Man("Tom","Anderson",67);
-        Man man2 = new Man("Daniel","James",48);
+        Woman woman1 = new Woman("Ella","Evans",50);
+        Woman woman2 = new Woman("Olivia","Bailey",67);
+        Man man1 = new Man("Tom","Anderson",70);
+        Man man2 = new Man("Daniel","James",40);
 
         System.out.println("Вік більше пенсійного порогу 60 років - " + woman1.isRetired(woman1.getAge()));
         System.out.println("Вік більше пенсійного порогу 65 років - " + man1.isRetired(man1.getAge()));

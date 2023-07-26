@@ -8,10 +8,7 @@ public class Woman extends Person {
 
     @Override
     public boolean isRetired(int age) {
-        if (age > 60) {
-            return true;
-        } else
-            return super.isRetired(age);
+        return (age > 60) ? true : false;
     }
 
     @Override
@@ -22,7 +19,6 @@ public class Woman extends Person {
             this.partner = man;
             this.lastName = man.getLastName();
         }
-        super.registerPartnership(partner);
     }
 
     @Override
@@ -35,6 +31,5 @@ public class Woman extends Person {
                 this.partner = null;
             }
         }
-        super.deregisterPartnership(returnToPreviousLastName);
     }
 }
